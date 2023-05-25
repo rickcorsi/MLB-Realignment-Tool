@@ -1,0 +1,1236 @@
+﻿@page "/"
+
+<PageTitle>MLB Expansion App</PageTitle>
+<div class="main">
+<div class="league-main">
+    <div class="league-division">
+        <label id="division_label_0" oninput="changeDivisionName('_0')" class="league-division-label">AL East</label>
+        <div id="AL_division_1" class="card-container">
+            <div id="team_01" class="card-main" style="background-color: #0C2340;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_01" class="card-teamname">New York</label>
+                        <label id="editnickname_01" class="card-teamname">Yankees</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_01" onchange="changeDivision('_01');">
+                        <option class="divisionSelect_0" selected="selected" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo" id="card_teaminfo_sample">
+                    <label id="editest_01" class="card-teamest">Est. 1903</label>
+                    <label id="editlocation_01" class="card-teamest">Location: The Bronx, NY</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_01');" >Edit Team</label>
+                <div id="editinput_01" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_01" onchange="changeColor('_01')" value="#0C2340">
+                </div>
+            </div>
+            <div id="team_02" class="card-main" style="background-color: #DF4601;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_02" class="card-teamname">Baltimore</label>
+                        <label id="editnickname_02" class="card-teamname">Orioles</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_02" onchange="changeDivision('_02');">
+                        <option class="divisionSelect_0" selected="selected" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_02" class="card-teamest">Est. 1901</label>
+                    <label id="editlocation_02" class="card-teamest">Location: 	Baltimore, MD</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_02');" >Edit Team</label>
+                <div id="editinput_02" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_02" onchange="changeColor('_02')" value="#DF4601">
+                </div>
+            </div>
+            <div id="team_03" class="card-main" style="background-color: #092C5C;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_03" class="card-teamname">Tampa Bay</label>
+                        <label id="editnickname_03" class="card-teamname">Rays</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_03" onchange="changeDivision('_03');">
+                        <option class="divisionSelect_0" selected="selected" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_03" class="card-teamest">Est. 1998</label>
+                    <label id="editlocation_03" class="card-teamest">Location: St. Petersburg, FL</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_03');" >Edit Team</label>
+                <div id="editinput_03" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_03" onchange="changeColor('_03')" value="#092C5C">
+                </div>            </div>
+            <div id="team_04" class="card-main" style="background-color: #134A8E;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_04" class="card-teamname">Toronto</label>
+                        <label id="editnickname_04" class="card-teamname">Blue Jays</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_04" onchange="changeDivision('_04');">
+                        <option class="divisionSelect_0" selected="selected" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_04" class="card-teamest">Est. 1977</label>
+                    <label id="editlocation_04" class="card-teamest">Location: Toronto, ON</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_04');" >Edit Team</label>
+                <div id="editinput_04" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_04" onchange="changeColor('_04')" value="#134A8E">
+                </div>            </div>
+            <div id="team_05" class="card-main" style="background-color: #BD3039;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_05" class="card-teamname">Boston</label>
+                        <label id="editnickname_05" class="card-teamname">Red Sox</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_05" onchange="changeDivision('_05');">
+                        <option class="divisionSelect_0" selected="selected" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_05" class="card-teamest">Est. 1901</label>
+                    <label id="editlocation_05" class="card-teamest">Location: Boston, MA</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_05');" >Edit Team</label>
+                <div id="editinput_05" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_05" onchange="changeColor('_05')" value="#BD3039">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="league-division">
+        <label id="division_label_1" oninput="changeDivisionName('_1')" class="league-division-label">AL Central</label>
+        <div id="AL_division_2" class="card-container">
+            <div id="team_06" class="card-main" style="background-color: #27251F;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_06" class="card-teamname">Chicago</label>
+                        <label id="editnickname_06" class="card-teamname">White Sox</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_06" onchange="changeDivision('_06');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" selected="selected" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_06" class="card-teamest">Est. 1900</label>
+                    <label id="editlocation_06" class="card-teamest">Location: Chicago, IL</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_06');" >Edit Team</label>
+                <div id="editinput_06" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_06" onchange="changeColor('_06')" value="#27251F">
+                </div>
+            </div>
+            <div id="team_07" class="card-main" style="background-color: #E50022;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_07" class="card-teamname">Cleveland</label>
+                        <label id="editnickname_07" class="card-teamname">Guardians</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_07" onchange="changeDivision('_07');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" selected="selected" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_07" class="card-teamest" >Est. 1894</label>
+                    <label id="editlocation_07" class="card-teamest" >Location: Cleveland, OH</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_07');" >Edit Team</label>
+                <div id="editinput_07" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_07" onchange="changeColor('_07')" value="#E50022">
+                </div>
+            </div>
+            <div id="team_08" class="card-main" style="background-color: #004687;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_08" class="card-teamname">Kansas City</label>
+                        <label id="editnickname_08" class="card-teamname">Royals</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_08" onchange="changeDivision('_08');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" selected="selected" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_08" class="card-teamest">Est. 1969</label>
+                    <label id="editlocation_08" class="card-teamest">Location: Kansas City, MO</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_08');" >Edit Team</label>
+                <div id="editinput_08" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_08" onchange="changeColor('_08')" value="#004687">
+                </div>
+            </div>
+            <div id="team_09" class="card-main" style="background-color: #091F3F;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_09" class="card-teamname">Minnesota</label>
+                        <label id="editnickname_09" class="card-teamname">Twins</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_09" onchange="changeDivision('_09');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" selected="selected" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_09" class="card-teamest">Est. 1901</label>
+                    <label id="editlocation_09" class="card-teamest">Location: Minneapolis, MN</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_09');" >Edit Team</label>
+                <div id="editinput_09" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_09" onchange="changeColor('_09')" value="#091F3F">
+                </div>
+            </div>
+            <div id="team_10" class="card-main" style="background-color: #0C2340;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_10" class="card-teamname">Detroit</label>
+                        <label id="editnickname_10" class="card-teamname">Tigers</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_10" onchange="changeDivision('_10');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" selected="selected" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_10" class="card-teamest">Est. 1894</label>
+                    <label id="editlocation_10" class="card-teamest">Location: Detroit, MI</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_10');" >Edit Team</label>
+                <div id="editinput_10" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_10" onchange="changeColor('_10')" value="#0C2340">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="league-division">
+        <label id="division_label_2" oninput="changeDivisionName('_2')" class="league-division-label">AL West</label>
+        <div id="AL_division_3" class="card-container">
+            <div id="team_11" class="card-main" style="background-color: #003278;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_11" class="card-teamname">Texas</label>
+                        <label id="editnickname_11" class="card-teamname">Rangers</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_11" onchange="changeDivision('_11');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" selected="selected" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_11" class="card-teamest">Est. 1961</label>
+                    <label id="editlocation_11" class="card-teamest">Location: Arlington, TX</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_11');" >Edit Team</label>
+                <div id="editinput_11" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_11" onchange="changeColor('_11')" value="#003278">
+                </div>
+            </div>
+            <div id="team_12" class="card-main" style="background-color: #BA0021;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_12" class="card-teamname">Los Angeles</label>
+                        <label id="editnickname_12" class="card-teamname">Angels</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_12" onchange="changeDivision('_12');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" selected="selected" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_12" class="card-teamest" >Est. 1961</label>
+                    <label id="editlocation_12" class="card-teamest" >Location: Anaheim, CA</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_12');" >Edit Team</label>
+                <div id="editinput_12" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_12" onchange="changeColor('_12')" value="#BA0021">
+                </div>
+            </div>
+            <div id="team_13" class="card-main" style="background-color: #003831;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_13" class="card-teamname">Oakland</label>
+                        <label id="editnickname_13" class="card-teamname">Athletics</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_13" onchange="changeDivision('_13');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" selected="selected" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_13" class="card-teamest">Est. 1901</label>
+                    <label id="editlocation_13" class="card-teamest">Location: Oakland, CA</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_13');" >Edit Team</label>
+                <div id="editinput_13" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_13" onchange="changeColor('_13')" value="#003831">
+                </div>
+            </div>
+            <div id="team_14" class="card-main" style="background-color: #0C2C56;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_14" class="card-teamname">Seattle</label>
+                        <label id="editnickname_14" class="card-teamname">Mariners</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_14" onchange="changeDivision('_14');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" selected="selected" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_14" class="card-teamest">Est. 1977</label>
+                    <label id="editlocation_14" class="card-teamest">Location: Seattle, WA</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_14');" >Edit Team</label>
+                <div id="editinput_14" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_14" onchange="changeColor('_14')" value="#0C2C56">
+                </div>
+            </div>
+            <div id="team_15" class="card-main" style="background-color: #002D62;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_15" class="card-teamname">Houston</label>
+                        <label id="editnickname_15" class="card-teamname">Astros</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_15" onchange="changeDivision('_15');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" selected="selected" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_15" class="card-teamest">Est. 1962</label>
+                    <label id="editlocation_15" class="card-teamest">Location: Houston, TX</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_15');" >Edit Team</label>
+                <div id="editinput_15" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_15" onchange="changeColor('_15')" value="#002D62">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: none;" id="Extra_Division_1" class="league-division">
+        <label id="division_label_7" oninput="changeDivisionName('_7')" class="league-division-label">AL Division 4</label>
+        <div id="AL_division_4" class="card-container">
+        </div>
+    </div>
+</div>
+<div class="league-main">
+    <div class="league-division">
+        <label id="division_label_3" oninput="changeDivisionName('_3')" class="league-division-label">NL East</label>
+        <div id="NL_division_1" class="card-container">
+            <div id="team_16" class="card-main" style="background-color: #002D72;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_16" class="card-teamname">New York</label>
+                        <label id="editnickname_16" class="card-teamname">Mets</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_16" onchange="changeDivision('_16');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" selected="selected" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_16" class="card-teamest">Est. 1962</label>
+                    <label id="editlocation_16" class="card-teamest">Location: Queens, NY</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_16');" >Edit Team</label>
+                <div id="editinput_16" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_16" onchange="changeColor('_16')" value="#002D72">
+                </div>
+            </div>
+            <div id="team_17" class="card-main" style="background-color: #E81828;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_17" class="card-teamname">Philadelphia</label>
+                        <label id="editnickname_17" class="card-teamname">Phillies</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_17" onchange="changeDivision('_17');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" selected="selected" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_17" class="card-teamest" >Est. 1883</label>
+                    <label id="editlocation_17" class="card-teamest" >Location: Philadelphia, PA</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_17');" >Edit Team</label>
+                <div id="editinput_17" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_17" onchange="changeColor('_17')" value="#E81828">
+                </div>
+            </div>
+            <div id="team_18" class="card-main" style="background-color: #00A3E0;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_18" class="card-teamname">Miami</label>
+                        <label id="editnickname_18" class="card-teamname">Marlins</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_18" onchange="changeDivision('_18');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" selected="selected" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_18" class="card-teamest">Est. 1993</label>
+                    <label id="editlocation_18" class="card-teamest">Location: Miami, FL</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_18');" >Edit Team</label>
+                <div id="editinput_18" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_18" onchange="changeColor('_18')" value="#00A3E0">
+                </div>
+            </div>
+            <div id="team_19" class="card-main" style="background-color: #AB0003;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_19" class="card-teamname">Washington</label>
+                        <label id="editnickname_19" class="card-teamname">Nationals</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_19" onchange="changeDivision('_19');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" selected="selected" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_19" class="card-teamest">Est. 1969</label>
+                    <label id="editlocation_19" class="card-teamest">Location: Washington, DC</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_19');" >Edit Team</label>
+                <div id="editinput_19" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_19" onchange="changeColor('_19')" value="#AB0003">
+                </div>
+            </div>
+            <div id="team_20" class="card-main" style="background-color: #13274F;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_20" class="card-teamname">Atlanta</label>
+                        <label id="editnickname_20" class="card-teamname">Braves</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_20" onchange="changeDivision('_20');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" selected="selected" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_20" class="card-teamest">Est. 1871</label>
+                    <label id="editlocation_20" class="card-teamest">Location: Cumberland, GA</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_20');" >Edit Team</label>
+                <div id="editinput_20" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_20" onchange="changeColor('_20')" value="#13274F">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="league-division">
+        <label id="division_label_4" oninput="changeDivisionName('_4')" class="league-division-label">NL Central</label>
+        <div id="NL_division_2" class="card-container">
+            <div id="team_21" class="card-main" style="background-color: #C6011F;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_21" class="card-teamname">Cincinnati</label>
+                        <label id="editnickname_21" class="card-teamname">Reds</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_21" onchange="changeDivision('_21');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" selected="selected" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_21" class="card-teamest">Est. 1881</label>
+                    <label id="editlocation_21" class="card-teamest">Location: Cincinnati, OH</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_21');" >Edit Team</label>
+                <div id="editinput_21" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_21" onchange="changeColor('_21')" value="#C6011F">
+                </div>
+            </div>
+            <div id="team_22" class="card-main" style="background-color: #C41E3A;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_22" class="card-teamname">St. Louis</label>
+                        <label id="editnickname_22" class="card-teamname">Cardinals</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_22" onchange="changeDivision('_22');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" selected="selected" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_22" class="card-teamest" >Est. 1882</label>
+                    <label id="editlocation_22" class="card-teamest" >Location: St. Louis, MO</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_22');" >Edit Team</label>
+                <div id="editinput_22" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_22" onchange="changeColor('_22')" value="#C41E3A">
+                </div>
+            </div>
+            <div id="team_23" class="card-main" style="background-color: #0E3386;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_23" class="card-teamname">Chicago</label>
+                        <label id="editnickname_23" class="card-teamname">Cubs</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_23" onchange="changeDivision('_23');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" selected="selected" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_23" class="card-teamest">Est. 1876</label>
+                    <label id="editlocation_23" class="card-teamest">Location: Chicago, IL</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_23');" >Edit Team</label>
+                <div id="editinput_23" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_23" onchange="changeColor('_23')" value="#0E3386">
+                </div>
+            </div>
+            <div id="team_24" class="card-main" style="background-color: #FDB827;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_24" class="card-teamname">Pittsburgh</label>
+                        <label id="editnickname_24" class="card-teamname">Pirates</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_24" onchange="changeDivision('_24');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" selected="selected" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_24" class="card-teamest">Est. 1882</label>
+                    <label id="editlocation_24" class="card-teamest">Location: Pittsburgh, PA</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_24');" >Edit Team</label>
+                <div id="editinput_24" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_24" onchange="changeColor('_24')" value="#FDB827">
+                </div>
+            </div>
+            <div id="team_25" class="card-main" style="background-color: #12284B;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_25" class="card-teamname">Milwaukee</label>
+                        <label id="editnickname_25" class="card-teamname">Brewers</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_25" onchange="changeDivision('_25');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" selected="selected" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_25" class="card-teamest">Est. 1969</label>
+                    <label id="editlocation_25" class="card-teamest">Location: Milwaukee, WI</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_25');" >Edit Team</label>
+                <div id="editinput_25" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_25" onchange="changeColor('_25')" value="#12284B">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="league-division">
+        <label id="division_label_5" oninput="changeDivisionName('_5')" class="league-division-label">NL West</label>
+        <div id="NL_division_3" class="card-container">
+            <div id="team_26" class="card-main" style="background-color: #005A9C;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_26" class="card-teamname">Los Angeles</label>
+                        <label id="editnickname_26" class="card-teamname">Dodgers</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_26" onchange="changeDivision('_26');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" selected="selected" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_26" class="card-teamest">Est. 1883</label>
+                    <label id="editlocation_26" class="card-teamest">Location: Los Angeles, CA</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_26');" >Edit Team</label>
+                <div id="editinput_26" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_26" onchange="changeColor('_26')" value="#005A9C">
+                </div>
+            </div>
+            <div id="team_27" class="card-main" style="background-color: #333366;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_27" class="card-teamname">Colorado</label>
+                        <label id="editnickname_27" class="card-teamname">Rockies</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_27" onchange="changeDivision('_27');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" selected="selected" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_27" class="card-teamest" >Est. 1993</label>
+                    <label id="editlocation_27" class="card-teamest" >Location: Denver, CO</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_27');" >Edit Team</label>
+                <div id="editinput_27" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_27" onchange="changeColor('_27')" value="#333366">
+                </div>
+            </div>
+            <div id="team_28" class="card-main" style="background-color: #FD5A1E;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_28" class="card-teamname">San Francisco</label>
+                        <label id="editnickname_28" class="card-teamname">Giants</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_28" onchange="changeDivision('_28');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" selected="selected" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_28" class="card-teamest">Est. 1883</label>
+                    <label id="editlocation_28" class="card-teamest">Location: San Francisco, CA</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_28');" >Edit Team</label>
+                <div id="editinput_28" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_28" onchange="changeColor('_28')" value="#FD5A1E">
+                </div>
+            </div>
+            <div id="team_29" class="card-main" style="background-color: #A71930;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_29" class="card-teamname">Arizona</label>
+                        <label id="editnickname_29" class="card-teamname">Diamondbacks</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_29" onchange="changeDivision('_29');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" selected="selected" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_29" class="card-teamest">Est. 1998</label>
+                    <label id="editlocation_29" class="card-teamest">Location: Phoenix, AZ</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_29');" >Edit Team</label>
+                <div id="editinput_29" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_29" onchange="changeColor('_29')" value="#A71930">
+                </div>
+            </div>
+            <div id="team_30" class="card-main" style="background-color: #2F241D;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_30" class="card-teamname">San Diego</label>
+                        <label id="editnickname_30" class="card-teamname">Padres</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_30" onchange="changeDivision('_30');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" selected="selected" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_30" class="card-teamest">Est. 1969</label>
+                    <label id="editlocation_30" class="card-teamest">Location: San Diego, CA</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_30');" >Edit Team</label>
+                <div id="editinput_30" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_30" onchange="changeColor('_30')" value="#2F241D">
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div style="display: none;" id="Extra_Division_2" class="league-division">
+        <label id="division_label_8" oninput="changeDivisionName('_8')" class="league-division-label">NL Division 4</label>
+        <div id="NL_division_4" class="card-container">
+        </div>
+    </div>
+</div>
+<div class="league-main">
+    <div class="league-function-card">
+        <label class="league-functions-label">League Functions</label>
+        <div class="functions-main">
+            <div>
+            <button class="functions-buttons" onclick="resetLeague();" value="">Reset League</button>
+            <button class="functions-buttons" onclick="resetLeague();" value="">Keep Historic Rivalries</button>
+            </div>
+            <button class="functions-buttons" onclick="restoreLeague();" value="">Restore League</button>
+            <button id="Add_Division_Button" class="functions-buttons" onclick="addDivision();" value="">Add Extra Divisions</button>
+            <button class="functions-buttons" onclick="expandLeague();" value="">Add New Team</button>
+            <button id="Edit_Mode_Button" class="functions-buttons" onclick="editorMode();" value="">Edit Mode</button>
+            <button class="functions-buttons" onclick="compactView();" value="">Toggle Compact View</button>
+        </div>
+    </div>
+    <div class="league-function-card">
+        <label class="league-functions-label">Historical Allignments</label>
+        <div class="functions-main">
+            <button class="functions-buttons" onclick="alignment1();" value="">2013</button>
+            <button class="functions-buttons" onclick="alignment2();" value="">1998</button>
+            <button class="functions-buttons" onclick="alignment3();" value="">1994</button>
+        </div>
+    </div>
+    <div class="league-division">
+            <label class="league-functions-label">Pool of Teams</label>
+            <div id="TeamsPool" class="card-container">
+                <div id="team_31" class="card-main" style="background-color: #000000; display: none;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_31" class="card-teamname">City</label>
+                        <label id="editnickname_31" class="card-teamname">Nickname</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_31" onchange="changeDivision('_31');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" selected="selected" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_31" class="card-teamest">Est. 2023</label>
+                    <label id="editlocation_31" class="card-teamest">Location: City, NA</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_31');" >Edit Team</label>
+                <div id="editinput_31" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_31" onchange="changeColor('_31')" value="#000000">
+                </div>
+            </div>
+                <div id="team_32" class="card-main" style="background-color: #000000; display: none;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_32" class="card-teamname">City</label>
+                        <label id="editnickname_32" class="card-teamname">Nickname</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_32" onchange="changeDivision('_32');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" selected="selected" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_32" class="card-teamest">Est. 2023</label>
+                    <label id="editlocation_32" class="card-teamest">Location: City, NA</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_32');" >Edit Team</label>
+                <div id="editinput_32" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_32" onchange="changeColor('_32')" value="#000000">
+                </div>
+            </div>
+                <div id="team_33" class="card-main" style="background-color: #000000; display: none;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_33" class="card-teamname">City</label>
+                        <label id="editnickname_33" class="card-teamname">Nickname</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_33" onchange="changeDivision('_33');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" selected="selected" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_33" class="card-teamest">Est. 2023</label>
+                    <label id="editlocation_33" class="card-teamest">Location: City, NA</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_33');" >Edit Team</label>
+                <div id="editinput_33" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_33" onchange="changeColor('_33')" value="#000000">
+                </div>
+            </div>
+                <div id="team_34" class="card-main" style="background-color: #000000; display: none;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_34" class="card-teamname">City</label>
+                        <label id="editnickname_34" class="card-teamname">Nickname</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_34" onchange="changeDivision('_34');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" selected="selected" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_34" class="card-teamest">Est. 2023</label>
+                    <label id="editlocation_34" class="card-teamest">Location: City, NA</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_34');" >Edit Team</label>
+                <div id="editinput_34" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_34" onchange="changeColor('_34')" value="#000000">
+                </div>
+            </div>
+                <div id="team_35" class="card-main" style="background-color: #000000; display: none;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_35" class="card-teamname">City</label>
+                        <label id="editnickname_35" class="card-teamname">Nickname</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_35" onchange="changeDivision('_35');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" selected="selected" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_35" class="card-teamest">Est. 2023</label>
+                    <label id="editlocation_35" class="card-teamest">Location: City, NA</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_35');" >Edit Team</label>
+                <div id="editinput_35" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_35" onchange="changeColor('_35')" value="#000000">
+                </div>
+            </div>
+                <div id="team_36" class="card-main" style="background-color: #000000; display: none;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_36" class="card-teamname">City</label>
+                        <label id="editnickname_36" class="card-teamname">Nickname</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_36" onchange="changeDivision('_36');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" selected="selected" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_36" class="card-teamest">Est. 2023</label>
+                    <label id="editlocation_36" class="card-teamest">Location: City, NA</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_36');" >Edit Team</label>
+                <div id="editinput_36" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_36" onchange="changeColor('_36')" value="#000000">
+                </div>
+            </div>
+                <div id="team_37" class="card-main" style="background-color: #000000; display: none;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_37" class="card-teamname">City</label>
+                        <label id="editnickname_37" class="card-teamname">Nickname</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_37" onchange="changeDivision('_37');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" selected="selected" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_37" class="card-teamest">Est. 2023</label>
+                    <label id="editlocation_37" class="card-teamest">Location: City, NA</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_37');" >Edit Team</label>
+                <div id="editinput_37" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_37" onchange="changeColor('_37')" value="#000000">
+                </div>
+            </div>
+                <div id="team_38" class="card-main" style="background-color: #000000; display: none;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_38" class="card-teamname">City</label>
+                        <label id="editnickname_38" class="card-teamname">Nickname</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_38" onchange="changeDivision('_38');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" selected="selected" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_38" class="card-teamest">Est. 2023</label>
+                    <label id="editlocation_38" class="card-teamest">Location: City, NA</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_38');" >Edit Team</label>
+                <div id="editinput_38" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_38" onchange="changeColor('_38')" value="#000000">
+                </div>
+            </div>
+                <div id="team_39" class="card-main" style="background-color: #000000; display: none;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_39" class="card-teamname">City</label>
+                        <label id="editnickname_39" class="card-teamname">Nickname</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_39" onchange="changeDivision('_39');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" selected="selected" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_39" class="card-teamest">Est. 2023</label>
+                    <label id="editlocation_39" class="card-teamest">Location: City, NA</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_39');" >Edit Team</label>
+                <div id="editinput_39" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_39" onchange="changeColor('_39')" value="#000000">
+                </div>
+            </div>
+                <div id="team_40" class="card-main" style="background-color: #000000; display: none;">
+                <div class="card-top">
+                    <div class="card-teamname-container">
+                        <label id="editcity_40" class="card-teamname">City</label>
+                        <label id="editnickname_40" class="card-teamname">Nickname</label>
+                    </div>
+                    <div>
+                    <select class="card-dropdown" id="selectedDivision_40" onchange="changeDivision('_40');">
+                        <option class="divisionSelect_0" value="0">AL East</option>
+                        <option class="divisionSelect_1" value="1">AL Central</option>
+                        <option class="divisionSelect_2" value="2">AL West</option>
+                        <option class="divisionSelect_7" style="display: none;" value="7">AL Division 4</option>
+                        <option class="divisionSelect_3" value="3">NL East</option>
+                        <option class="divisionSelect_4" value="4">NL Central</option>
+                        <option class="divisionSelect_5" value="5">NL West</option>
+                        <option class="divisionSelect_8" style="display: none;" value="8">NL Division 4</option>
+                        <option class="divisionSelect_6" selected="selected" value="6">Pool of Teams</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="card-teaminfo">
+                    <label id="editest_40" class="card-teamest">Est. 2023</label>
+                    <label id="editlocation_40" class="card-teamest">Location: City, NA</label>
+                </div>
+                <label class="card-teamedit" id="card_teamedit_sample" onclick="editteam('_40');" >Edit Team</label>
+                <div id="editinput_40" class="card-edit-input">
+                    <input type="color" class="card-teamcolor-edit" id="teamcolor_40" onchange="changeColor('_40')" value="#000000">
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>

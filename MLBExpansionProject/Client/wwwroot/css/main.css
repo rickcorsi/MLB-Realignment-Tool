@@ -1,0 +1,174 @@
+﻿body {
+}
+.card-container {
+    max-width: 360px;
+    padding: 2px;
+}
+.card-main {
+    width: 100%;
+    height: 62px;
+    margin-top: 2px;
+}
+.card-main-edit {
+    width: 100%;
+    min-height: 104px;
+    margin-top: 2px;
+}
+.card-top {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+}
+.card-teamname-container {
+    width: 70%;
+    margin-top: 3px;   
+}
+.card-teamname {
+    font-size: 18px;
+    margin-left: 5px;
+    margin-top: 5px;
+    color: snow;
+}
+.card-teamest {
+    font-size: 12px;
+    margin-left: 7px;
+    margin-top: 5px;
+    font-weight: bold;
+    color: snow;
+}
+.card-teamname-edit {
+    font-size: 18px;
+    margin-left: 5px;
+    margin-top: 3px;
+    color: snow;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 2px;
+    display: inline;
+}
+
+.card-teamest-edit {
+    font-size: 12px;
+    margin-left: 7px;
+    margin-top: 3px;
+    font-weight: bold;
+    color: snow;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 2px;
+    display: inline;
+}
+.card-teamedit {
+    width: 60px;
+    font-size: 12px;
+    margin-left: 7px;
+    margin-top: 5px;
+    font-weight: bold;
+    color: snow;
+    position: relative;
+    bottom: 30px;
+    left: 280px;
+    display: none;
+    z-index: 1;
+}
+.card-teaminfo {
+    width: 100%;
+    height: 30px;
+    border-radius: 0px 0px 0px 0px;
+}
+.card-teamcolor-edit {
+    font-size: 12px;
+    max-width: 60px;
+    margin-left: 7px;
+    margin-top: 3px;
+    font-weight: bold;
+    color: snow;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 2px;
+    border-color: snow;
+    display: inline;
+    background-color: transparent;
+    position: relative;
+    bottom: 20px;
+    left: 0px;
+}
+.card-dropdown {
+    width: 122px;
+    height: 20px;
+    margin: 0px;
+    display: none;
+}
+.card-edit-input {
+    width: 100%;
+    display: none;
+    z-index: 7;
+}
+.league-division-label {
+    font-size: 20px;
+    margin-left: 7px;
+    margin-top: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.league-functions-label {
+    font-size: 20px;
+    margin-left: 7px;
+    margin-top: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.league-division {
+    min-width: 370px;
+    max-width: 370px;
+    background-color: #ededed;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 5px;
+}
+.league-main {
+    width: 400px;
+    margin: 5px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+.league-function-card {
+    min-width: 370px;
+    max-width: 370px;
+    background-color: #ededed;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 5px;
+}
+.functions-main {
+    width: 100%;
+    margin-top: 2px;
+    padding: 5px;
+}
+.functions-buttons {
+    margin: 6px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,1);
+    transition: .4s;
+    border: 2px solid;
+    border-style: solid;
+    border-color: steelblue;
+}
+    .functions-buttons:hover {
+        margin: 6px;
+        border-radius: 5px;
+        background-color: rgba(0,0,255,.1);
+    }
+.Extra-Division-Select {
+    display: none;
+}
+label {
+    display: inline;
+}
