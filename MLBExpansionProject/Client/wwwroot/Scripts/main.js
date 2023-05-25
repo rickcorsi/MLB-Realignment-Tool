@@ -428,3 +428,48 @@ function expandLeague() {
         }
     }
 }
+function toggleDarkmode() {
+    var n = document.getElementById("darkmodeIcon").name;
+    if (n === "moon") {
+        var b = document.getElementById("darkmodeIcon");
+        b.name = "sunny";
+        b.style.color = "snow";
+        var l = document.getElementsByClassName("league-division-label");
+        for (var i = 0; i < l.length; i++) {
+            l[i].style.color = "snow";
+        }
+        var l = document.getElementsByClassName("league-functions-label");
+        for (var i = 0; i < l.length; i++) {
+            l[i].style.color = "snow";
+        }
+        var f = document.getElementsByClassName("functions-buttons");
+        for (var i = 0; i < f.length; i++) {
+            f[i].style.color = "snow";
+            f[i].style.border = "2px solid snow";
+        }
+        var t = document.getElementById("toolbarText");
+        t.style.color = "snow";
+    }
+    else {
+        var b = document.getElementById("darkmodeIcon");
+        b.name = "moon";
+        b.style.color = "black";
+        var l = document.getElementsByClassName("league-division-label");
+        for (var i = 0; i < l.length; i++) {
+            l[i].style.color = "black";
+        }
+        var l = document.getElementsByClassName("league-functions-label");
+        for (var i = 0; i < l.length; i++) {
+            l[i].style.color = "black";
+        }
+        var f = document.getElementsByClassName("functions-buttons");
+        for (var i = 0; i < f.length; i++) {
+            f[i].style.color = "black";
+            f[i].style.border = "2px solid black";
+        }
+        var t = document.getElementById("toolbarText");
+        t.style.color = "black";
+    }
+    var body = document.body;
+    body.classList.toggle("body-dark");
+}
