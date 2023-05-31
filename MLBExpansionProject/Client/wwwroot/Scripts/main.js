@@ -473,3 +473,6 @@ function toggleDarkmode() {
     var body = document.body;
     body.classList.toggle("body-dark");
 }
+window.onload = toggleDarkmode();
+document.addEventListener('DOMContentLoaded', function () {
+}, false);

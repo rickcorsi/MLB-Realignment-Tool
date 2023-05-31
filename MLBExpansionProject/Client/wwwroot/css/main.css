@@ -34,10 +34,7 @@
     min-width: 30px;
     min-height: 30px;
     transition: .5s;
-}
-    .darkmode-toggle-icon:hover {
-        color: yellow;
-    }
+}  
 .darkmode-toggle-button {
     background-color: transparent;
     border: none;
